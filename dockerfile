@@ -10,3 +10,5 @@ RUN apk update && \
 
 RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
 RUN echo "source /etc/profile.d/bash_completion.sh" >> /root/.bashrc
+
+ENTRYPOINT ["bash"]
